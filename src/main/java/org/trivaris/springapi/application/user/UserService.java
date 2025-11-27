@@ -1,6 +1,5 @@
 package org.trivaris.springapi.application.user;
 
-import java.util.List;
 import org.springframework.stereotype.Service;
 import org.trivaris.springapi.domain.user.User;
 import org.trivaris.springapi.domain.user.UserRepository;
@@ -22,7 +21,6 @@ public class UserService {
 
   public User putUser(String username, String email) {
     var user = new User(username, email);
-    userRepository.save(user);
-    return user;
+    return userRepository.save(user);
   }
 }

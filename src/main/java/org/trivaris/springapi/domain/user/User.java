@@ -14,8 +14,8 @@ import lombok.ToString;
 import org.trivaris.springapi.domain.post.Post;
 
 @Getter
-@Entity
 @NoArgsConstructor
+@Entity
 @Table(name = "app_user")
 public class User {
   @Id
